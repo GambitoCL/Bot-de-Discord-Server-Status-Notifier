@@ -1,4 +1,4 @@
-# **Discord Bot Description: Server Status Notifier**
+# **Discord Bot: Server Status Notifier**
 
 This custom Discord bot is designed to notify users when your server is fully active and operational. It is ideal for servers utilizing frameworks like ESX, QBcore, or other similar database systems.
 
