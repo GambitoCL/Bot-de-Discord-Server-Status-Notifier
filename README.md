@@ -1,37 +1,37 @@
-# **Descripción del Bot de Discord: Server Status Notifier**
+# **Discord Bot Description: Server Status Notifier**
 
-Este bot personalizado para Discord está diseñado para notificar a los usuarios cuando tu servidor está completamente activo y funcionando. Es ideal para servidores que utilizan marcos como ESX, QBcore u otros sistemas de base de datos similares.
+This custom Discord bot is designed to notify users when your server is fully active and operational. It is ideal for servers utilizing frameworks like ESX, QBcore, or other similar database systems.
 
-**Características principales:**
+**Key Features:**
 
-1. **Notificaciones en tiempo real:** El bot monitorea constantemente el estado del servidor y envía un mensaje configurable cuando detecta que está completamente activo y funcional.
+1. **Real-Time Notifications:** The bot continuously monitors the server's status and sends a configurable message when it detects that the server is fully active and functional.
 
-2. **Mensaje en modo Embed:** Utiliza un formato de mensaje Embed profesional y personalizable para ofrecer información clara y visualmente atractiva sobre el estado del servidor.
+2. **Embed Message Format:** It uses a professional and customizable Embed message format to provide clear and visually appealing information about the server's status.
 
-3. **Configuración flexible:** Permite a los administradores del servidor configurar el contenido exacto del mensaje Embed, incluyendo título, descripción, imagen, colores y campos adicionales según las necesidades específicas del servidor.
+3. **Flexible Configuration:** Server administrators can configure the exact content of the Embed message, including title, description, image, colors, and additional fields based on specific server needs.
 
-4. **Integración sencilla:** Creado utilizando la API oficial de Discord, garantiza una integración segura y confiable con cualquier servidor. Se puede configurar fácilmente a través de la interfaz de desarrollo de Discord.
+4. **Easy Integration:** Built using Discord's official API, it ensures secure and reliable integration with any server. It can be easily configured through the Discord developer interface.
 
-5. **Requisitos de implementación:** Para asegurar su correcto funcionamiento, se recomienda iniciar este bot al final de todos los demás scripts en tu archivo `server.cfg` o `resources.cfg`, dependiendo de la configuración específica de tu servidor.
+5. **Deployment Requirements:** To ensure proper operation, it is recommended to start this bot after all other scripts in your `server.cfg` or `resources.cfg`, depending on your server's specific setup.
 
-6. **Soporte para diferentes marcos:** Compatible con una amplia gama de marcos y sistemas de base de datos utilizados en servidores de Discord para juegos y comunidades diversas.
+6. **Support for Different Frameworks:** Compatible with a wide range of frameworks and database systems used in Discord servers for various games and communities.
 
-**Cómo usar:**
+**How to Use:**
 
-1. **Crear el bot:** Visita https://discord.com/developers/applications/ para crear una nueva aplicación y obtener las credenciales necesarias para tu bot.
+1. **Create the Bot:** Visit https://discord.com/developers/applications/ to create a new application and obtain the necessary credentials for your bot.
 
-2. **Configuración inicial:** Personaliza los permisos del bot y configura los canales de notificación en tu servidor Discord.
+2. **Initial Setup:** Customize the bot's permissions and configure notification channels on your Discord server.
 
-3. **Configuración del mensaje Embed:** Define el contenido del mensaje Embed que se enviará cuando el servidor esté activo. Esto incluye detalles como título, descripción, imágenes y cualquier otro dato relevante.
+3. **Embed Message Configuration:** Define the content of the Embed message to be sent when the server is active. This includes details such as title, description, images, and any other relevant data.
 
-4. **Activación automática:** El bot monitorea automáticamente el estado del servidor y enviará el mensaje Embed configurado tan pronto como detecte que el servidor está completamente activo y operativo.
+4. **Automatic Activation:** The bot automatically monitors the server's status and sends the configured Embed message as soon as it detects that the server is fully active and operational.
 
-**Beneficios:**
+**Benefits:**
 
-- **Notificaciones precisas:** Asegura que todos los miembros del servidor estén informados inmediatamente cuando el servidor esté listo para su uso.
+- **Accurate Notifications:** Ensures all server members are promptly informed when the server is ready for use.
+  
+- **Enhanced User Experience:** Prevents users from attempting to access a server undergoing maintenance or experiencing technical issues.
+  
+- **Advanced Customization:** Allows complete customization of the notification message to reflect the server's identity and style.
 
-- **Mejora la experiencia del usuario:** Evita que los usuarios intenten acceder a un servidor en mantenimiento o con problemas técnicos.
-
-- **Personalización avanzada:** Permite adaptar completamente el mensaje de notificación para reflejar la identidad y estilo del servidor.
-
-Con este bot, mantén a tus usuarios informados y asegúrate de que siempre estén al tanto del estado de tu servidor Discord de manera clara y profesional.
+With this bot, keep your users informed and ensure they are always aware of your Discord server's status in a clear and professional manner.
