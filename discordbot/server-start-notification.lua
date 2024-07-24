@@ -1,14 +1,14 @@
-local discordToken = 'DISCORD_TOKEN' -- Reemplaza con el token de Carlbot
+local discordToken = 'DISCORD_TOKEN' -- Replace with your discord app token
 
 local function sendDiscordMessage(content, embed)
-    local url = 'https://discord.com/api/v9/channels/ID_DEL_CANAL/messages' -- Reemplaza ID_DEL_CANAL con el ID del canal de Discord
+    local url = 'https://discord.com/api/v9/channels/CHANNEL_ID/messages' -- Replace CHANNEL_ID with the Discord channel ID
     
     PerformHttpRequest(url, function(statusCode, response, headers)
         if statusCode == 200 then
-            print('^2Mensaje enviado a Discord correctamente.')
+            print('^2Message sent to Discord successfully.')
         else
-            print('^1Error al enviar mensaje a Discord. Código de error HTTP: ' .. statusCode)
-            print('Respuesta del servidor:', response)
+            print('^1Error sending message to Discord. Error code HTTP: ' .. statusCode)
+            print('Server response:', response)
         end
     end, 'POST', json.encode({
         content = content,
@@ -19,23 +19,22 @@ local function sendDiscordMessage(content, embed)
     })
 end
 
--- Configura tu embed aquí
+-- Configure your embed here
 
-local logoEmoji = "<:NOMBRE_DEL_EMOJI:>ID_DEL_EMOJI" -- Reemplaza NOMBRE_DEL_EMOJI por el nombre del emoji y reemplaza ID_DEL_EMOJI con el ID del emoji personalizado
+local logoEmoji = "<:NAME_EMOJI:>ID_EMOJI" -- Replace NAME_EMOJI with the emoji name and replace ID_EMOJI with the custom emoji ID
 local embed = {
-    title = logoEmoji .."SERVIDOR ON".. logoEmoji, -- Título
+    title = logoEmoji .."SERVIDOR ON".. logoEmoji, -- TITLE
     description = "El servidor ya se encuentra activo. !No dudes en reportar cualquier problema que ocurra en los canales correspondientes!.\n\n**Si no te puedes conectar directo desde FiveM, abre F8 copia, pega y das enter: connect cfx.re/join/XXXXXX**",
-    color = 0xF2168F, -- (puedes cambiarlo según tu preferencia) NO CAMBIES EL PREFIJO 0x, despues de 0x pega tu color hexadeciaml
+    color = 0xF2168F, -- (you can change it according to your preference) DO NOT CHANGE THE PREFIX 0x, after 0x paste your hex color
     footer = {
-        text = "TEXTO DE ABAJO", -- Texto inferior
-        icon_url = "URL DEL ICONO DEL FOOTER", -- Icono inferior izquierdo 
+        text = "FOOTER TEXT", -- Footer Text
+        icon_url = "URL ICON FOOTER", -- Bottom left icon
     },
     timestamp = os.date('!%Y-%m-%dT%H:%M:%SZ'),
 
     thumbnail = {
-        url = "URL DEL LOGO SUPERIOR DERECHO",  -- Coloca aquí la URL de tu miniatura
+        url = "URL LOGO",  -- Place the URL of your thumbnail here -- top right logo
     }
 }
 
--- Llama a esta función cuando el servidor de FiveM esté completamente cargado
-sendDiscordMessage("# ||@everyone|| ¡SERVIDOR OPERATIVO! ||@everyone||", embed) -- Llama a la función con @everyone en el contenido del mensaje
+sendDiscordMessage("# ||@everyone|| ¡SERVER ON! ||@everyone||", embed) -- Call the function with @everyone in the message content
